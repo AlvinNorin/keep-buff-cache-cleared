@@ -16,7 +16,7 @@ while true; do
     # If cache size exceeds 1024 MiB (1 GiB), clear the cache
     if [ "$cache_size_mib" -gt 1024 ]; then
         clear_cache
-        echo "$(date): Cleared cache, it exceeded 1 GiB" >> /var/log/cache_clear.log
+        echo "$(date): Cleared cache, it exceeded 1 GiB" >> /tmp/cache_clear.log
     fi
     
     # Wait for 1 second before checking again
