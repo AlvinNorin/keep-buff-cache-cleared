@@ -1,3 +1,6 @@
+#!/bin/bash
+set -e
+
 echo "Downloading- and installing script- and service ..."
 
 wget https://raw.githubusercontent.com/AlvinNorin/keep-buff-cache-cleared/main/clear_cache.sh -P /tmp/
@@ -12,3 +15,5 @@ echo "Enabling- and starting service ..."
 
 sudo systemctl enable clear_cache.service
 sudo systemctl start clear_cache.service
+
+echo "Installation successful!"
