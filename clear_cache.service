@@ -1,0 +1,8 @@
+[Unit]
+Description=Clear Cache if it exceeds 1 GiB
+
+[Service]
+ExecStart=/usr/local/bin/clear_cache.sh
+
+[Install]
+WantedBy=multi-user.target
